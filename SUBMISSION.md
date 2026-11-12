@@ -16,7 +16,9 @@ In our sample month, two bills total $80 and the starting allocation is $50. Thr
 
 Tesseract reads the statement. Three specialist scouts independently query a local Ollama model about eligible briefs. We keep amounts and dates in structured records. A Python service stores evidence and reconciles each payment in SQLite. Mobile browsers can record audio or upload a photo. The test buyer can replay the work before approving it.
 
-Our English video shows the complete practice run. The PayPal Sandbox adapter is implemented and needs configured test accounts for provider verification. It sends a task reward with Payouts, checks the item identity and terminal status, and uses Orders for each test merchant checkout. Every retry carries the original intent. A separate practice mode supplies a reproducible full cycle with local receipts. The trial briefs come from the included buyer catalog. A live public source search discovers open GitHub documentation bounties.
+On November 12, 2026, the test buyer approved the Korean recording task and Get By sent its $12 reward through PayPal Sandbox Payouts. PayPal returned `SUCCESS` for one USD 12.00 item. Get By matched the recipient, amount and task reference before recording one $12 receipt in the worker’s ledger.
+
+Our English video shows the full practice run, including bill payments with local receipts. The app also implements PayPal Orders for test merchant checkout. The Sandbox verification above covers the recording reward. The trial briefs come from the included buyer catalog. A live public source search discovers open GitHub documentation bounties.
 
 ## What we learned
 

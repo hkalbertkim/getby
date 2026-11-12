@@ -89,7 +89,9 @@ Speech, Evaluation and Licensing each filter the supplied buyer catalog by langu
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-The ten tests exercise due-date-aware work planning, opt-in bill payments, OCR, revision and resubmission, unpaid photo listings, concurrent payout retries, partial bill payment, mismatched recipient and order identity, and recovery after interrupted or voided transactions. The recorded desktop and mobile walkthrough used Gemma for all three scouts. It produced seven practice ledger entries, $34 in earnings, $80 paid and $4 left. The external search returned eight open issues on that run. The provider tests use fixtures. A PayPal-issued transaction reference requires running Sandbox mode with funded test accounts.
+**PayPal Sandbox verification (November 12, 2026).** PayPal returned `SUCCESS` for one $12 Korean recording reward. Get By matched the payout to the worker and the approved task. A recheck of the same batch left one $12 receipt in the ledger.
+
+The ten tests exercise due-date-aware work planning, opt-in bill payments, OCR, revision and resubmission, unpaid photo listings, concurrent payout retries, partial bill payment, mismatched recipient and order identity, and recovery after interrupted or voided transactions. The recorded desktop and mobile walkthrough used Gemma for all three scouts. It produced seven practice ledger entries, $34 in earnings, $80 paid and $4 left. The external search returned eight open issues on that run. The automated provider tests use fixtures.
 
 SQLite files and submitted media stay under `.runtime/<mode>/`. To rerun the scenario without changing an existing session, use a fresh directory.
 
