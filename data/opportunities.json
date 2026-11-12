@@ -73,9 +73,7 @@
     "lang": "en",
     "kind": "external",
     "brief": "Long-form English narration brief.",
-    "steps": [
-      "Read the long script."
-    ],
+    "steps": ["Read the long script."],
     "payday": "2026-12-03"
   },
   {
@@ -87,9 +85,7 @@
     "lang": "en",
     "kind": "external",
     "brief": "An extended review of an English transcript.",
-    "steps": [
-      "Read the full transcript."
-    ],
+    "steps": ["Read the full transcript."],
     "payday": "2026-12-07"
   }
 ]

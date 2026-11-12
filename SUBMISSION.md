@@ -8,15 +8,15 @@ A due-date reminder can tell someone that their electricity bill is coming. It c
 
 ## What it does
 
-A user photographs a bill. Get By extracts the amount and due date, calculates the shortfall and matches small tasks to their time, language and permissions. The user can record Korean phrases, compare two answers, check a receipt or prepare a photo for licensing. A buyer reviews the actual submission. The dashboard separates work awaiting approval, expected income and money received.
+A user photographs a bill. Get By extracts the amount and due date, calculates the shortfall and matches small tasks to their time, language and permissions. The user can record Korean phrases, compare two answers, check a receipt or prepare a photo for licensing. Get By proposes a bundle against the bill deadlines. In our demo it finds $30 in fixed-pay tasks requiring about 19 minutes of work. A buyer reviews the actual submission. The dashboard separates work awaiting approval, expected income and money received.
 
-In our sample month, two bills total $80 and the starting allocation is $50. Three tasks earn $30. A sale from last month’s photo catalog adds $4. After both bills are paid, that $4 belongs to the user.
+In our sample month, two bills total $80 and the starting allocation is $50. Three tasks earn $30. A sale from last month’s photo catalog adds $4. The user can instruct Get By to pay the registered practice bills as soon as they are covered. After both bills are paid, that $4 belongs to the user.
 
 ## How we built it
 
 Tesseract reads the statement. Three specialist scouts independently query a local Ollama model about eligible briefs. We keep amounts and dates in structured records. A Python service stores evidence and reconciles each payment in SQLite. Mobile browsers can record audio or upload a photo. The test buyer can replay the work before approving it.
 
-The PayPal Sandbox adapter sends a task reward with Payouts, checks the item identity and terminal status, and uses Orders for each test merchant checkout. Every retry carries the original intent. A separate practice mode supplies a reproducible full cycle with local receipts. The trial briefs come from the included buyer catalog. A live public source search discovers open GitHub documentation bounties.
+Our English video shows the complete practice run. The PayPal Sandbox adapter is implemented and needs configured test accounts for provider verification. It sends a task reward with Payouts, checks the item identity and terminal status, and uses Orders for each test merchant checkout. Every retry carries the original intent. A separate practice mode supplies a reproducible full cycle with local receipts. The trial briefs come from the included buyer catalog. A live public source search discovers open GitHub documentation bounties.
 
 ## What we learned
 
