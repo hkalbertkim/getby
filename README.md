@@ -2,7 +2,9 @@
 
 Get By finds small paid tasks that can cover a bill shortfall. Scan a bill, choose a brief, submit the work and follow the reward through buyer review and collection. The ring changes when the ledger receives a confirmed payment.
 
-[Run the app](#run-the-app) · [Try the $30 challenge](#try-the-30-challenge) · [Connect PayPal Sandbox](#connect-paypal-sandbox) · [Understand the scouts](#how-the-scouts-work) · [Verify the build](#verify-the-build)
+[Watch the 94-second demo](https://github.com/hkalbertkim/getby/releases/download/v0.1.0/GetBy-Demo.mp4) · [Run the app](#run-the-app) · [Try the $30 challenge](#try-the-30-challenge) · [Connect PayPal Sandbox](#connect-paypal-sandbox) · [Understand the scouts](#how-the-scouts-work) · [Verify the build](#verify-the-build)
+
+![Get By showing a thirty dollar shortfall and four work briefs](docs/work-scouts.png)
 
 <br />
 
@@ -87,7 +89,7 @@ Speech, Evaluation and Licensing each filter the supplied buyer catalog by langu
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-The tests exercise OCR, revision and resubmission, unpaid photo listings, concurrent payout retries, partial bill payment, mismatched recipient and order identity, and recovery after interrupted or voided transactions. The provider tests use fixtures. A PayPal-issued transaction reference requires running Sandbox mode with funded test accounts.
+The tests exercise OCR, revision and resubmission, unpaid photo listings, concurrent payout retries, partial bill payment, mismatched recipient and order identity, and recovery after interrupted or voided transactions. The recorded desktop and mobile walkthrough used Gemma for all three scouts. It produced seven practice ledger entries, $34 in earnings, $80 paid and $4 left. The external search returned eight open issues on that run. The provider tests use fixtures. A PayPal-issued transaction reference requires running Sandbox mode with funded test accounts.
 
 SQLite files and submitted media stay under `.runtime/<mode>/`. To rerun the scenario without changing an existing session, use a fresh directory.
 
