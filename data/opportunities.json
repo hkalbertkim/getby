@@ -1,0 +1,95 @@
+[
+  {
+    "id": "voice",
+    "agent": "Speech",
+    "title": "Record Korean phrases",
+    "minutes": 5,
+    "reward": 1200,
+    "lang": "ko",
+    "kind": "audio",
+    "brief": "A speech research team needs a natural reading of three Korean prompts.",
+    "steps": [
+      "Record the three short phrases in a quiet room.",
+      "Listen back and confirm that this is your own voice.",
+      "Submit to the test buyer for review."
+    ],
+    "usage": "Voice quality evaluation in this local demonstration. Audio stays on this server.",
+    "payday": "2026-11-18"
+  },
+  {
+    "id": "review",
+    "agent": "Evaluation",
+    "title": "Compare AI answers",
+    "minutes": 8,
+    "reward": 1000,
+    "lang": "any",
+    "kind": "choice",
+    "brief": "Select the clearer answer to a customer billing question and explain why.",
+    "steps": [
+      "Read the question and two candidate answers.",
+      "Select an answer and write a short reason.",
+      "Submit your evaluation to the test buyer."
+    ],
+    "payday": "2026-11-19"
+  },
+  {
+    "id": "receipt",
+    "agent": "Evaluation",
+    "title": "Check receipt totals",
+    "minutes": 6,
+    "reward": 800,
+    "lang": "any",
+    "kind": "amount",
+    "brief": "A labeling team needs a human to check a receipt extracted by OCR.",
+    "steps": [
+      "Read the example item prices.",
+      "Calculate the total including tax.",
+      "Submit the corrected total for review."
+    ],
+    "payday": "2026-11-20"
+  },
+  {
+    "id": "photo",
+    "agent": "Licensing",
+    "title": "License a photo",
+    "minutes": 3,
+    "reward": null,
+    "lang": "any",
+    "kind": "photo",
+    "brief": "Prepare one original still-life photo for the test licensing catalog. Payment depends on a sale.",
+    "steps": [
+      "Select a photo you own.",
+      "Describe it and confirm permission to license it.",
+      "Submit the listing. The buyer may purchase it later."
+    ],
+    "payday": null
+  },
+  {
+    "id": "long",
+    "agent": "Speech",
+    "title": "Narrate a long script",
+    "minutes": 40,
+    "reward": 1800,
+    "lang": "en",
+    "kind": "external",
+    "brief": "Long-form English narration brief.",
+    "steps": [
+      "Read the long script."
+    ],
+    "payday": "2026-12-03"
+  },
+  {
+    "id": "interview",
+    "agent": "Evaluation",
+    "title": "Review an interview transcript",
+    "minutes": 30,
+    "reward": 1500,
+    "lang": "en",
+    "kind": "external",
+    "brief": "An extended review of an English transcript.",
+    "steps": [
+      "Read the full transcript."
+    ],
+    "payday": "2026-12-07"
+  }
+]
